@@ -2,5 +2,7 @@ package shin.test_proxy;
 
 public interface BookService {
 
-    public void rent(Book book);
+    void rent(Book book);
+
+    void returnBook(Book book);
 }

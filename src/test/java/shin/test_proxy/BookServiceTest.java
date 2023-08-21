@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BookServiceTest {
 
-    BookService bookService = new DefaultBookService();
+    BookService bookService = new BookServiceProxy(new DefaultBookService());
 
     @Test
     public void di() {
